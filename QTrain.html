@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Urban transport
+</title>
+</head>
+<body>
+  <div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+<script>
+  const url = "script.js"
+  const data = [{
+    label: 'First Dataset',
+    data: [{ x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 },
+        { x: Math.random() * 100, y: Math.random() * 100, r: Math.random() * 50 }],
+    backgroundColor: 'rgb(255, 99, 132)'
+  }];
+  
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bubble',
+    data: {
+      datasets: data
+    },
+    options: {
+      scales: {
+        x: {
+          ticks: {
+            beginAtZero: true
+          }
+        },
+        y: {
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      }
+    }
+    
+  })
+   
+</script>
+  <script> src = "script.js"
+    
+  </script>
+</body>
+</html>

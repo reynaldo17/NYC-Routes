@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  background: rgb(9, 29, 148);
+  background: linear-gradient(90deg, rgba(9, 29, 148, 1) 29%, rgba(139, 10, 10, 1) 100%);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.bluestack,
+.redstack,
+.yellowstack{
+  padding: 20px;
+  border-radius: 10px;
+  margin: 125px;
+  text-align: center;
+  background: black;
+}
+
+.bluestack h2,
+.redstack h2,
+.yellowstack h2{
+  margin-top: 0;
+  size: 20px;
+  color: white;
+}
+
+.bluestack h2,
+.redstack h2 
+.yellowstack h2{
+  margin-bottom: 0;
+}
+
+.bluestack button {
+  color: white;
+  background: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.redstack button {
+  color: white;
+  background: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.yellowstack button {
+  color: black;
+  background: yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
