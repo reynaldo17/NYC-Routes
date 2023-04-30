@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Urban transport
+</title>
+</head>
+<body>
+  <div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+<script>
+  const url = "script.js"
+  const data = [{
+    label: 'First Dataset',
+    data: [{ x:10, y:20, r:10},
+          {x:20,y: 30,r:10},
+          {x:30, y: 50, r:10},
+           {x:40, y: 25, r:10},
+           {x:50, y: 60, r:10},
+           {x:60, y: 35, r:10},
+           {x:70, y: 45, r:10},
+           {x:80,y: 20,r:10},
+          {x: 90,y: 30,r:10},
+           {x: 100,y: 50,r:10},
+           {x: 110,y: 25,r:10},
+           {x: 120,y: 60,r:10},
+           
+           {x: 130,y: 35,r:10},
+           {x: 140,y: 45,r:10},
+           {x: 150,y: 20,r:10},
+           {x: 160,y: 30,r:10},
+           {x: 170,y: 50,r:10},
+           {x: 180,y: 25,r:10}],
+    backgroundColor: 'rgb(255, 99, 132)'
+  }];
+  
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bubble',
+    data: {
+      datasets: data
+    },
+    options: {
+      scales: {
+        x: {
+          ticks: {
+            beginAtZero: true
+          }
+        },
+        y: {
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      }
+    }
+    
+  })
+   
+</script>
+  <script> src = "script.js"
+    
+  </script>
+</body>
+</html>
